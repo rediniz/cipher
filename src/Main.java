@@ -16,7 +16,10 @@ public class Main {
     
     public static void main(String args[]) throws IOException{
         CipherWriter writer = new CipherWriter(new OutputStreamWriter(System.out));
-        writer.write("Testando A Entrada!? 123".toCharArray(), 0, 1);
+               
+        String teste = "Testando A Entrada!? 123"; //String para teste
+        char[] testeChar = teste.toCharArray(); //Converte em um array de chars que será passado para o writer
+        writer.write(teste);
     }
     
 }

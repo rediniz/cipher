@@ -22,20 +22,11 @@ public class CipherWriter extends Writer {
     }
 
     @Override
-    public void write(char[] cbuf, int off, int len) throws IOException {
+    public void write(char[] cbuf) throws IOException {
         out.write(cifra(cbuf));
         System.out.println(cbuf);
     }
 
-    @Override
-    public void flush() throws IOException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void close() throws IOException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 
     public char[] cifra(char[] cadeia) {
 
@@ -110,4 +101,22 @@ public class CipherWriter extends Writer {
         }
         return cadeia;
     }
+
+	@Override
+	public void close() throws IOException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void flush() throws IOException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void write(char[] cbuf, int off, int len) throws IOException {
+		// TODO Auto-generated method stub
+		
+	}
 }
