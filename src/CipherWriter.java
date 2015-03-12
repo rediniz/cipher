@@ -66,7 +66,7 @@ public class CipherWriter extends Writer {
                         cadeia[i] = 'a';
                         break;
                     case 'U':
-                        cadeia[i] = 'e';
+                        cadeia[i] = 'A';
                         break;
                 }
                 //Se for consoante, faz a substituição das consoantes

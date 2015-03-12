@@ -1,5 +1,6 @@
 
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 /*
@@ -19,7 +20,10 @@ public class Main {
                
         String teste = "Testando A Entrada!? 123"; //String para teste
         char[] testeChar = teste.toCharArray(); //Converte em um array de chars que será passado para o writer
-        writer.write(teste);
+        writer.write(testeChar);
+        
+        CipherReader reader = new CipherReader(new InputStreamReader(System.in));
+        reader.read("Vitvepfu E Ipvsefe!? 123".toCharArray());
     }
     
 }
